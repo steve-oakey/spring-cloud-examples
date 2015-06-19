@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: proxy
+server:
+  port: 8765
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+zuul:
+  ignored-services: '*'
+  strip-prefix: false
+  routes:
+    api-v1:
+      path: /api/v1/**
+    api-v2:
+      path: /api/v2/**
