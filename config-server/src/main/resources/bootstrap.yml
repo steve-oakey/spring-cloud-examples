@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///home/steve/Development/repos/config
+        bootstrap: true

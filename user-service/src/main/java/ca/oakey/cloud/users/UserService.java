@@ -1,11 +1,11 @@
 package ca.oakey.cloud.users;
 
-
 import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +13,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@SpringCloudApplication
+@SpringBootApplication
+@EnableDiscoveryClient
 @RestController
 public class UserService {
 
@@ -23,7 +24,7 @@ public class UserService {
 
 	@RequestMapping("/users")
 	public List<User> getUsers() {
-		return Arrays.asList(new User("sdoakey", "Stephen Oakey"), new User("akoakey", "Ash Oakey"));
+		return Arrays.asList(new User("sdoakey", "Steve Oakey"));
 	}
 
 	@Data

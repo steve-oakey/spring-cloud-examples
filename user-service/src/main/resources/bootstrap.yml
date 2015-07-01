@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+server:
+  port: 8081
+eureka:
+  instance:
+    hostname: localhost
+    metadata-map:
+      instanceId: ${spring.application.name}:${server.port}
+    non-secure-port: ${server.port}
+  client:
+    service-url:
+      defaulZone: http://localhost:8761/eureka
