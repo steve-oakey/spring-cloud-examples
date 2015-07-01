@@ -16,10 +16,10 @@ import lombok.NoArgsConstructor;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
-public class UserService {
+public class UserServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserService.class, args);
+		SpringApplication.run(UserServiceApplication.class, args);
 	}
 
 	@RequestMapping("/users")

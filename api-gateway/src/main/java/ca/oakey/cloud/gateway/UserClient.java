@@ -6,7 +6,7 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import ca.oakey.cloud.users.UserService.User;
+import ca.oakey.cloud.users.UserServiceApplication.User;
 
 @FeignClient("user-service")
 public interface UserClient {

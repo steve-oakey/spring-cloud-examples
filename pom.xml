@@ -10,8 +10,8 @@
 	<artifactId>cloud-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Spring Cloud Work</name>
-
+	<name>Spring Cloud Examples</name>
+	<description>A suite of example applications to demonstrate a Spring Cloud infrastructure</description>
 	<modules>
 		<module>discovery-server</module>
 		<module>proxy-server</module>

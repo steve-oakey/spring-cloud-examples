@@ -7,7 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>proxy-server</artifactId>
-	<name>Edge Server</name>
+	<name>Proxy Server</name>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
